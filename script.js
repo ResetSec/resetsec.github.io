@@ -126,9 +126,13 @@ const formerMembers = [
         }
     },
     {
-        name: "Seaglade",
-        tags: [],
-        bio: "",
+        name: "seaglade",
+        tags: ["reverse engineering", "web", "forensics", "osint"],
+        bio: "maybe someday i'll be half-decent at rev and binex... o_o",
+        socials: {
+            "Website": "https://seaglade.dev",
+            "GitHub": "https://github.com/seaglade",
+        },
     },
     {
         name: "Spaced out Rexy",
