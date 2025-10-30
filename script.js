@@ -126,7 +126,7 @@ const formerMembers = [
         }
     },
     {
-        name: "Kiarc",
+        name: "Seaglade",
         tags: [],
         bio: "",
     },
