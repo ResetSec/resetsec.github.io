@@ -1,67 +1,68 @@
 {
-  "members": {
-    "0x42": {
-      "img": "0x42.png"
-    },
-    "aku": {
-      "img": "aku.png"
-    },
-    "antennaevy": {
-      "img": "AntennaeVY.png"
-    },
-    "awdev": {
-      "img": "awdev.png"
-    },
-    "brine": {
-      "img": "brine.png"
-    },
-    "calx": {
-      "img": "calx.png"
-    },
-    "davinci": {
-      "img": "daVinci.png"
-    },
-    "fin": {
-      "img": "FIN.png"
-    },
-    "gexxr": {
-      "img": "gexxr.png"
-    },
-    "greysneakthief": {
-      "img": "greysneakthief.png"
-    },
-    "ivan": {
-      "img": "ivan.png"
-    },
-    "kiarc": {
-      "img": "kiarc.png"
-    },
-    "kibov": {
-      "img": "kibov.png"
-    },
-    "m3m0rydmp": {
-      "img": "m3m0rydmp.gif"
-    },
-    "madrat_0": {
-      "img": "madrat_0.png"
-    },
-    "makider": {
-      "img": "makider.webp"
-    },
-    "oblivion": {
-      "img": "oblivion.png"
-    },
-    "spacedoutrexy": {
-      "img": "spacedoutrexy.png"
-    },
-    "tr1dent": {
-      "img": "Tr1dent.png"
-    },
-    "vulnx": {
-      "img": "vulnx.png"
-    },
-    "xxaxaaa": {
-      "img": "xxaxaaa.png"
+    "members": {
+        "0x42": {
+            "img": "0x42.png"
+        },
+        "aku": {
+            "img": "aku.png"
+        },
+        "antennaevy": {
+            "img": "AntennaeVY.png"
+        },
+        "awdev": {
+            "img": "awdev.png"
+        },
+        "brine": {
+            "img": "brine.png"
+        },
+        "calx": {
+            "img": "calx.png"
+        },
+        "davinci": {
+            "img": "daVinci.png"
+        },
+        "fin": {
+            "img": "FIN.png"
+        },
+        "gexxr": {
+            "img": "gexxr.png"
+        },
+        "greysneakthief": {
+            "img": "greysneakthief.png"
+        },
+        "ivan": {
+            "img": "ivan.png"
+        },
+        "seaglade": {
+            "img": "seaglade.png"
+        },
+        "kibov": {
+            "img": "kibov.png"
+        },
+        "m3m0rydmp": {
+            "img": "m3m0rydmp.gif"
+        },
+        "madrat_0": {
+            "img": "madrat_0.png"
+        },
+        "makider": {
+            "img": "makider.webp"
+        },
+        "oblivion": {
+            "img": "oblivion.png"
+        },
+        "spacedoutrexy": {
+            "img": "spacedoutrexy.png"
+        },
+        "tr1dent": {
+            "img": "Tr1dent.png"
+        },
+        "vulnx": {
+            "img": "vulnx.png"
+        },
+        "xxaxaaa": {
+            "img": "xxaxaaa.png"
+        }
     }
   }
 }

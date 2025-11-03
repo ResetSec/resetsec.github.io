@@ -69,58 +69,73 @@ const teamMembers = [
 ];
 
 const formerMembers = [
-  {
-    name: "AntennaeVY",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "Brine",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "calx",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "daVinci",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "FIN",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "gexxr",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "greysneakthief",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "Ivan Nikolskiy",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "lh0ax",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "ol3livi0n",
-    tags: ["web", "blockchain"],
-    bio: "Spidering the web...",
-    socials: {
-      GitHub: "https://github.com/OI3livion",
-      X: "https://x.com/ol3livi0n",
+    {
+        name: "AntennaeVY",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "Brine",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "calx",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "daVinci",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "FIN",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "gexxr",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "greysneakthief",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "Ivan Nikolskiy",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "lh0ax",
+        tags: [],
+        bio: "",
+    },
+    {
+        name: "ol3livi0n",
+        tags: ["web", "blockchain"],
+        bio: "Spidering the web...",
+        socials: {
+            "GitHub": "https://github.com/OI3livion",
+            "X": "https://x.com/ol3livi0n",
+        }
+    },
+    {
+        name: "seaglade",
+        tags: ["reverse engineering", "web", "forensics", "osint"],
+        bio: "maybe someday i'll be half-decent at rev and binex... o_o",
+        socials: {
+            "Website": "https://seaglade.dev",
+            "GitHub": "https://github.com/seaglade",
+        },
+    },
+    {
+        name: "Spaced out Rexy",
+        tags: [],
+        bio: "",
     },
   },
   {
