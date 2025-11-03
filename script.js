@@ -138,11 +138,6 @@ const formerMembers = [
         bio: "",
     },
     {
-      name: "Spaced out Rexy",
-      tags: [],
-      bio: "",
-    },
-    {
       name: "Tr1dent",
       tags: [],
       bio: "",
