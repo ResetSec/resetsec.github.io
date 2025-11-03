@@ -137,27 +137,21 @@ const formerMembers = [
         tags: [],
         bio: "",
     },
-  },
-  {
-    name: "Kiarc",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "Spaced out Rexy",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "Tr1dent",
-    tags: [],
-    bio: "",
-  },
-  {
-    name: "xxaxaaa",
-    tags: [],
-    bio: "",
-  },
+    {
+      name: "Spaced out Rexy",
+      tags: [],
+      bio: "",
+    },
+    {
+      name: "Tr1dent",
+      tags: [],
+      bio: "",
+    },
+    {
+      name: "xxaxaaa",
+      tags: [],
+      bio: "",
+    }
 ];
 
 function addMembers(where, members) {
