@@ -1,0 +1,46 @@
+name: Update CTFTime stats
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/get_stats.py"
+      - ".github/workflows/update-stats.yml"
+
+  workflow_dispatch: # allow manual run from Actions tab
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # needed so we can push later
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run stats generator
+        run: |
+          python scripts/get_stats.py
+
+      - name: Commit and push stats.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain stats.json) ]]; then
+            git add stats.json
+            git commit -m "ci: update stats.json [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi

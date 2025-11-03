@@ -1,294 +1,291 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-    --white: #ffffff;
-    --black: #1b1b1b;
-    --dark-grey: #252525;
-    --grey: #888888;
-    --light-red: #f85149;
-    --dark-red: #da3633;
-    --blue: #388bfd;
-    --purple: #a371f7;
-    --yellow: #e3b341;
-    --dark-green: #3fb950;
-    --light-green: #56d364;
-
+  --white: #ffffff;
+  --black: #1b1b1b;
+  --dark-grey: #252525;
+  --grey: #888888;
+  --light-red: #f85149;
+  --dark-red: #da3633;
+  --blue: #388bfd;
+  --purple: #a371f7;
+  --yellow: #e3b341;
+  --dark-green: #3fb950;
+  --light-green: #56d364;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: var(--white);
-    font-size: 1.2rem;
-    line-height: 150%;
-    user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 150%;
+  user-select: none;
 }
 
-*:not(i.fab):not(i.fas):not(i.far):not(i.fa):not(i.fa-solid):not(i.fa-regular):not(i.fa-brands):not(svg) {
-    font-family: "Courier Prime", monospace;
+*:not(i.fab):not(i.fas):not(i.far):not(i.fa):not(i.fa-solid):not(
+    i.fa-regular
+  ):not(i.fa-brands):not(svg) {
+  font-family: "Courier Prime", monospace;
 }
-
-
 
 main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .splash-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(var(--dark-grey), var(--black));
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(var(--dark-grey), var(--black));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .splash-img {
-    width: 20%;
+  width: 20%;
 }
 
 .splash-title {
-    font-size: 7rem;
-    font-family: "Ubuntu Mono", monospace;
+  font-size: 7rem;
+  font-family: "Ubuntu Mono", monospace;
 }
 
-
 .side-bar {
-    width: 25vw;
-    background: linear-gradient(to left, var(--dark-grey), var(--black));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
+  width: 25vw;
+  background: linear-gradient(to left, var(--dark-grey), var(--black));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
 }
 
 .main-container {
-    background: radial-gradient(var(--dark-grey), var(--black));
-    width: 75vw;
+  background: radial-gradient(var(--dark-grey), var(--black));
+  width: 75vw;
 }
 
 .side-bar,
 .main-container {
-    height: 100vh;
-    overflow: auto;
+  height: 100vh;
+  overflow: auto;
 }
 
 .side-bar * {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .side-bar img {
-    width: 70%;
-    margin-bottom: 50px;
+  width: 70%;
+  margin-bottom: 50px;
 }
 
 .side-bar ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .side-bar ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .side-bar ul li a:hover {
-    border-bottom: thin solid var(--white);
+  border-bottom: thin solid var(--white);
 }
 
 .side-bar button {
-    background-color: transparent;
-    outline: none;
-    border: thin solid var(--white);
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: transparent;
+  outline: none;
+  border: thin solid var(--white);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .side-bar button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    box-shadow: 0 0 10px 0 var(--white);
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 0 10px 0 var(--white);
 }
 
 .main-container {
-    padding: 50px 30px 100px 100px;
+  padding: 50px 30px 100px 100px;
 }
 
 .main-container h1 {
-    font-size: 2.5rem;
-    margin-top: 100px;
+  font-size: 2.5rem;
+  margin-top: 100px;
 }
 
 .main-container h1::before {
-    content: "#";
-    vertical-align: middle;
-    font-size: 1.75rem;
-    color: var(--grey);
-    margin-right: 15px;
+  content: "#";
+  vertical-align: middle;
+  font-size: 1.75rem;
+  color: var(--grey);
+  margin-right: 15px;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
 }
 
 table tr {
-    border-top: thin solid var(--white);
-    border-bottom: thin solid var(--white);
+  border-top: thin solid var(--white);
+  border-bottom: thin solid var(--white);
 }
 
 table td {
-    padding: 20px 0;
-    flex: 1;
+  padding: 20px 0;
+  flex: 1;
 }
 
 .member-pfp {
-    width: 128px;
-    border-radius: 5px;
+  width: 128px;
+  border-radius: 5px;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tag::before {
-    padding: 1px 10px;
-    border-radius: 100px;
-    font-size: 1rem;
-    margin: 0 3px;
-    white-space: nowrap;
+  padding: 1px 10px;
+  border-radius: 100px;
+  font-size: 1rem;
+  margin: 0 3px;
+  white-space: nowrap;
 }
 
 .tag[data-tag="pwn"]::before {
-    content: "pwn";
-    background-color: var(--light-red);
+  content: "pwn";
+  background-color: var(--light-red);
 }
 
 .tag[data-tag="web"]::before {
-    content: "web";
-    background-color: var(--blue);
+  content: "web";
+  background-color: var(--blue);
 }
 
 .tag[data-tag="forensics"]::before {
-    content: "forensics";
-    background-color: var(--purple);
+  content: "forensics";
+  background-color: var(--purple);
 }
 
 .tag[data-tag="mobile"]::before {
-    content: "mobile";
-    background-color: var(--yellow);
+  content: "mobile";
+  background-color: var(--yellow);
 }
 
 .tag[data-tag="crypto"]::before {
-    content: "crypto";
-    background-color: var(--dark-green);
+  content: "crypto";
+  background-color: var(--dark-green);
 }
 
 .tag[data-tag="hardware"]::before {
-    content: "hardware";
-    background-color: var(--grey);
+  content: "hardware";
+  background-color: var(--grey);
 }
 
 .tag[data-tag="reverse engineering"]::before {
-    content: "reverse engineering";
-    background-color: var(--light-green);
+  content: "reverse engineering";
+  background-color: var(--light-green);
 }
 
 .tag[data-tag="osint"]::before {
-    content: "osint";
-    background-color: var(--dark-red);
+  content: "osint";
+  background-color: var(--dark-red);
 }
 
 .tag[data-tag="dev"]::before {
-    content: "dev";
-    background-color: var(--dark-red);
+  content: "dev";
+  background-color: var(--dark-red);
 }
 
 .name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .name[data-leader="true"]::after {
-    content: "(leader)";
-    color: var(--grey);
-    font-style: italic;
-    margin-left: 10px;
-    font-weight: normal;
+  content: "(leader)";
+  color: var(--grey);
+  font-style: italic;
+  margin-left: 10px;
+  font-weight: normal;
 }
 
 .bio {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .bio ul li {
-    list-style-position: inside;
-    list-style-type: disclosure-closed;
+  list-style-position: inside;
+  list-style-type: disclosure-closed;
 }
 
 a {
-    text-decoration: none;
-    transition: 0.2s;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 a:hover {
-    border-bottom: thin solid var(--white);
+  border-bottom: thin solid var(--white);
 }
 
 @media only screen and (max-width: 1024px) {
+  *,
+  *::before,
+  *::after {
+    font-size: 0.85rem;
+  }
 
-    *,
-    *::before,
-    *::after {
-        font-size: 0.85rem;
-    }
+  .splash-title {
+    font-size: 3rem;
+  }
 
-    .splash-title {
-        font-size: 3rem;
-    }
+  .side-bar {
+    padding: 5px;
+  }
 
-    .side-bar {
-        padding: 5px;
-    }
+  .side-bar button {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
 
-    .side-bar button {
-        font-size: 0.7rem;
-        padding: 5px;
-    }
+  .main-container {
+    padding: 0 30px 100px 30px;
+  }
 
-    .main-container {
-        padding: 0 30px 100px 30px;
-    }
+  .main-container h1 {
+    font-size: 1rem !important;
+    margin-top: 50px;
+  }
 
-    .main-container h1 {
-        font-size: 1rem !important;
-        margin-top: 50px;
-    }
+  .main-container h1::before {
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
 
-    .main-container h1::before {
-        font-size: .9rem;
-        margin-right: 5px;
-    }
+  .member-pfp {
+    width: 50px;
+  }
 
-    .member-pfp {
-        width: 50px;
-    }
-
-    .tag::before {
-        font-size: 0.7rem;
-        padding: 0px 5px;
-        margin: 0 2px;
-    }
+  .tag::before {
+    font-size: 0.7rem;
+    padding: 0px 5px;
+    margin: 0 2px;
+  }
 }
