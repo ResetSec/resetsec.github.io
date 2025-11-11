@@ -42,7 +42,7 @@ const teamMembers = [
   {
     name: "calmred",
     tags: ["forensics"],
-    bio: "TBD",
+    bio: "\"TBD\" - calmred",
   },
   {
     name: "Kibov",
@@ -51,11 +51,6 @@ const teamMembers = [
     socials: {
       Blog: "https://kibov.pl/posts/",
     },
-  },
-  {
-    name: "m3m0rydmp",
-    tags: ["web", "osint"],
-    bio: "TBD",
   },
   {
     name: "Madrat_0",
@@ -115,6 +110,11 @@ const formerMembers = [
         bio: "",
     },
     {
+      name: "m3m0rydmp",
+      tags: ["web", "osint"],
+      bio: "TBD",
+    },
+    {
         name: "ol3livi0n",
         tags: ["web", "blockchain"],
         bio: "Spidering the web...",
@@ -136,11 +136,6 @@ const formerMembers = [
         name: "Spaced out Rexy",
         tags: [],
         bio: "",
-    },
-    {
-      name: "Spaced out Rexy",
-      tags: [],
-      bio: "",
     },
     {
       name: "Tr1dent",
