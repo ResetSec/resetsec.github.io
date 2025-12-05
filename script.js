@@ -61,6 +61,11 @@ const teamMembers = [
       CodeForces: "https://codeforces.com/profile/MadRat_0",
     },
   },
+  {
+    name: "daVinci",
+    tags: ["forensics", "misc", "reverse engineering"],
+    bio: "",
+  }
 ];
 
 const formerMembers = [
@@ -76,11 +81,6 @@ const formerMembers = [
     },
     {
         name: "calx",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "daVinci",
         tags: [],
         bio: "",
     },
