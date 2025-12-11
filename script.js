@@ -65,6 +65,33 @@ const teamMembers = [
     name: "daVinci",
     tags: ["forensics", "misc", "reverse engineering"],
     bio: "",
+  },
+  {
+    name: "greysneakthief",
+    tags: ["osint", "forensics", "web"],
+    bio: "Hydroponics and coffee/tea/mixology aficionado by day. CTF enjoyer by night.",
+    socials: {
+      GitHub: "https://github.com/greysneakthief",
+      Instagram: "modvspwnens",
+    }
+  },
+    {
+    name: "iiNovaCore",
+    tags: ["forensics", "web", "osint"],
+    bio: "memory forensics suck",
+    socials: {
+      Blog: "blog.ctrlgeek.studio",
+      Github: "https://github.com/iiNovaCore",
+    }
+  },
+  {
+    name: "rayqu4z4",
+    tags: ["RE", "pwn"],
+    bio: "every dream is illusion until you bring it to life",
+    socials: {
+      GitHub: "https://github.com/prathampopatiya",
+      rootme: "https://www.root-me.org/bu11doz3r",
+    }
   }
 ];
 
@@ -91,11 +118,6 @@ const formerMembers = [
     },
     {
         name: "gexxr",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "greysneakthief",
         tags: [],
         bio: "",
     },
