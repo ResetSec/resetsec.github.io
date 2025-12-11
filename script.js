@@ -86,7 +86,7 @@ const teamMembers = [
   },
   {
     name: "rayqu4z4",
-    tags: ["RE", "pwn"],
+    tags: ["reverse engineering", "pwn"],
     bio: "every dream is illusion until you bring it to life",
     socials: {
       GitHub: "https://github.com/prathampopatiya",
