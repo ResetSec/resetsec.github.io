@@ -80,7 +80,7 @@ const teamMembers = [
     tags: ["forensics", "web", "osint"],
     bio: "memory forensics suck",
     socials: {
-      Blog: "blog.ctrlgeek.studio",
+      Blog: "https://blog.ctrlgeek.studio/",
       Github: "https://github.com/iiNovaCore",
     }
   },
