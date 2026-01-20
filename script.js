@@ -6,7 +6,7 @@ const teamMembers = [
     name: "makid3r",
     leader: true, // add misc category
     tags: ["web", "forensics", "misc", "pwn", "mobile"],
-    bio: "i like cyberpunk (and CS) (and also pizza, [and C.C])",
+    bio: "i like cyberpunk",
     socials: {
       Blog: "https://makider.me",
       GitHub: "https://github.com/N1kkogg",
