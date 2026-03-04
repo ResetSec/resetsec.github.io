@@ -92,7 +92,17 @@ const teamMembers = [
       GitHub: "https://github.com/prathampopatiya",
       rootme: "https://www.root-me.org/bu11doz3r",
     }
-  }
+  },
+  {
+      name: "hxuu",
+      tags: ["web", "osint"],
+      bio: "Taking things apart so you don’t have to.",
+      socials: {
+          Blog: "https://hxuu.github.io/",
+          GitHub: "https://github.com/hxuu/",
+          LinkedIn: "https://www.linkedin.com/in/anas-mokhtari/"
+      }
+  },
 ];
 
 const formerMembers = [
