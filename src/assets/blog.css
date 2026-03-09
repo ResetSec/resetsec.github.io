@@ -53,6 +53,13 @@ body.blog-theme::before {
 	box-shadow: 0 0 100px 0 var(--light-black);
 }
 
+@media screen and (max-width: 768px) {
+	.blog-container {
+		max-width: 100%;
+		padding: 20px 20px;
+	}
+}
+
 /* =================================== headers ==================================== */
 
 h1::before,
@@ -134,4 +141,8 @@ table tbody tr:hover {
 	background-color: #292929;
 }
 
+/* ==================================== images ==================================== */
 
+img {
+	width: 100%;
+}
