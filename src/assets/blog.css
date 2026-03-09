@@ -94,3 +94,44 @@ blockquote {
 blockquote p {
 	margin: 0;
 }
+
+/* ==================================== tables ==================================== */
+
+/* Table base styling */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1.5em 0;
+	font-size: 0.95rem;
+	background-color: var(--dark-grey);
+	box-shadow: 0 0 20px 0 var(--light-black);
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+/* Header row */
+table thead th {
+	background-color: var(--black);
+	color: var(--purple);
+	text-align: left;
+	padding: 0.8em 1em;
+	font-weight: bold;
+	border-bottom: 1px solid var(--purple);
+}
+
+/* Table body cells */
+table tbody td {
+	padding: 0.6em 1em;
+	border-bottom: 1px solid var(--light-black);
+	color: var(--off-white);
+}
+
+table tbody tr:nth-child(even) {
+	background-color: #1e1e1e;
+}
+
+table tbody tr:hover {
+	background-color: #292929;
+}
+
+

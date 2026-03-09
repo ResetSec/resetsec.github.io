@@ -17,8 +17,8 @@ description: "A full template demonstrating typical sections used in technical C
 
 # Exploiting the Widget Service
 
-> This is a **dummy template** intended to test markdown → HTML styling for a CTF blog.  
-> It intentionally includes **many markdown constructs** so you can style them in Astro.
+> This is a **dummy template** intended to test markdown → HTML styling for a CTF blog. <br />
+> It intentionally includes **many markdown constructs** so you can style them in Astro. <br />
 
 ---
 
@@ -49,8 +49,8 @@ description: "A full template demonstrating typical sections used in technical C
 
 ### Description
 
-> Our company built a new **Widget API**
-> Unfortunately, users keep stealing flags from it
+> Our company built a new **Widget API** <br />
+> Unfortunately, users keep stealing flags from it <br />
 > Can you figure out how?
 
 ```
