@@ -6,7 +6,7 @@
 	--black: #151515;
 	--dark-black: #0b0b0b;
 	--dark-grey: #1f1f1f;
-	--grey: #888888;
+	--grey: #555555;
 	--light-red: #f85149;
 	--dark-red: #da3633;
 	--blue: #38bdf8;
@@ -26,6 +26,7 @@ body.blog-theme {
 	font-family: "Space Grotesk", sans-serif;
 	font-optical-sizing: auto;
 	font-size: 1rem;
+	line-height: 1.7;
 	margin: 0;
 }
 
@@ -37,6 +38,13 @@ body.blog-theme::before {
 	background-image: radial-gradient(circle, var(--off-white) 1px, transparent 1px);
 	animation: bgmove 120s linear infinite;
 	z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+	body.blog-theme {
+		font-size: .95rem;
+		line-height: 1.5;
+	}
 }
 
 @keyframes bgmove {
@@ -53,7 +61,6 @@ body.blog-theme::before {
 	max-width: 60%;
 	margin: 0px auto;
 	padding: 80px 60px;
-	line-height: 1.7;
 	box-shadow: 0 0 100px 0 var(--dark-black);
 }
 
@@ -164,17 +171,29 @@ code {
 	font-size: 0.95em;
 }
 
+@media screen and (max-width: 768px) {
+	:not(pre) > code {
+		padding: 0.07em 0.3em;
+	}
+}
+
 pre {
 	background-color: var(--black) !important;
 	margin-left: -60px;
 	margin-right: -60px;
 	padding: 10px 60px;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
+	border-top: 1px solid var(--grey);
+	border-bottom: 1px solid var(--grey);
 }
 
 @media screen and (max-width: 768px) {
 	pre {
-		max-width: calc(100% - 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 10px 20px;
 	}
+}
+
+hr {
+	border: thin solid var(--grey);
 }
