@@ -5,7 +5,9 @@ date: 2026-03-09
 event: "Example CTF 2026"
 category: "pwn"
 difficulty: "medium"
-author: "Your Name / Team"
+author:
+ - Author 1
+ - Author 2
 tags:
   - ctf
   - pwn
