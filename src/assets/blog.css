@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-  --white: #ffffff;
-  --off-white: #f1f1f1;
-  --black: #1b1b1b;
-  --light-black: #0b0b0b;
-  --dark-grey: #252525;
-  --grey: #888888;
-  --light-red: #f85149;
-  --dark-red: #da3633;
-  --blue: #38bdf8;
-  --purple: #a371f7;
-  --yellow: #e3b341;
-  --dark-green: #3fb950;
-  --light-green: #56d364;
+	--white: #ffffff;
+	--off-white: #e6edf3;
+	--black: #151515;
+	--dark-black: #0b0b0b;
+	--dark-grey: #1f1f1f;
+	--grey: #888888;
+	--light-red: #f85149;
+	--dark-red: #da3633;
+	--blue: #38bdf8;
+	--purple: #a371f7;
+	--yellow: #e3b341;
+	--dark-green: #3fb950;
+	--light-green: #56d364;
 }
 
 p, ul, ol, blockquote, pre {
@@ -54,7 +54,7 @@ body.blog-theme::before {
 	margin: 0px auto;
 	padding: 80px 60px;
 	line-height: 1.7;
-	box-shadow: 0 0 100px 0 var(--light-black);
+	box-shadow: 0 0 100px 0 var(--dark-black);
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +100,7 @@ blockquote {
 	padding: 0.6rem 1rem;
 	margin: 1.5rem 0;
 	font-style: italic;
+	background: rgb(from var(--purple) r g b / 0.08);
 }
 
 blockquote p {
@@ -108,19 +109,17 @@ blockquote p {
 
 /* ==================================== tables ==================================== */
 
-/* Table base styling */
 table {
 	width: 100%;
 	border-collapse: collapse;
 	margin: 1.5em 0;
 	font-size: 0.95rem;
 	background-color: var(--dark-grey);
-	box-shadow: 0 0 20px 0 var(--light-black);
+	box-shadow: 0 0 20px 0 var(--dark-black);
 	border-radius: 6px;
 	overflow: hidden;
 }
 
-/* Header row */
 table thead th {
 	background-color: var(--black);
 	color: var(--purple);
@@ -130,10 +129,9 @@ table thead th {
 	border-bottom: 1px solid var(--purple);
 }
 
-/* Table body cells */
 table tbody td {
 	padding: 0.6em 1em;
-	border-bottom: 1px solid var(--light-black);
+	border-bottom: 1px solid var(--dark-black);
 	color: var(--off-white);
 }
 
@@ -151,6 +149,32 @@ img {
 	width: 100%;
 }
 
-pre {
+/* ================================= code blocks ================================== */
+
+code {
 	font-family: "IBM Plex Mono";
+}
+
+:not(pre) > code {
+	color: var(--light-red);
+	background-color: rgb(from var(--light-red) r g b / 0.10);
+	padding: 0.15em 0.35em;;
+	border: thin solid rgb(from var(--light-red) r g b / 0.35);;
+	border-radius: 4px;
+	font-size: 0.95em;
+}
+
+pre {
+	background-color: var(--black) !important;
+	margin-left: -60px;
+	margin-right: -60px;
+	padding: 10px 60px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width: 768px) {
+	pre {
+		max-width: calc(100% - 40px);
+	}
 }
