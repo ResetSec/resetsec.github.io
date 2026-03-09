@@ -348,7 +348,7 @@ Example markdown image:
 
 Rendered:
 
-![Example Screenshot](https://dummyimage.com/800x400/222/fff.png&text=Crash+Screenshot)
+![Logo](/assets/logo/logo.webp)
 
 ---
 
