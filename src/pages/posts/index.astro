@@ -1,0 +1,39 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+
+const posts = Object.entries(
+  import.meta.glob("./*.md", { eager: true })
+)
+  .map(([path, post]) => {
+    const slug = path.split("/").pop().replace(".md", "");
+
+    return {
+      slug,
+      ...post.frontmatter
+    };
+  })
+  .filter(post => !post.draft)
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
+---
+
+<BlogLayout frontmatter={{ title: "Posts" }}>
+  <h1>Posts</h1>
+
+  <ul class="post-list">
+    {posts.map(post => (
+      <li class="post-item">
+        <a href={`/posts/${post.slug}`}>{post.title}</a>
+
+        <div class="post-meta">
+          <span>{post.date}</span>
+          {post.category && <span> • {post.category}</span>}
+          {post.difficulty && <span> • {post.difficulty}</span>}
+        </div>
+
+        {post.description && (
+          <p class="post-desc">{post.description}</p>
+        )}
+      </li>
+    ))}
+  </ul>
+</BlogLayout>

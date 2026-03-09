@@ -20,6 +20,11 @@ p, ul, ol, blockquote, pre {
 	margin: 1.2em 0;
 }
 
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body.blog-theme {
 	background-color: var(--black);
 	color: var(--off-white);
@@ -59,6 +64,7 @@ body.blog-theme::before {
 .blog-container {
 	background-color: var(--dark-grey);
 	max-width: 60%;
+	min-height: 100dvh;
 	margin: 0px auto;
 	padding: 80px 60px;
 	box-shadow: 0 0 100px 0 var(--dark-black);
@@ -196,4 +202,35 @@ pre {
 
 hr {
 	border: thin solid var(--grey);
+}
+
+/* ================================== post list =================================== */
+
+.post-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 2rem;
+}
+
+.post-item {
+	margin-bottom: 2rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid var(--grey);
+}
+
+.post-item a {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.post-meta {
+	color: var(--grey);
+	font-size: 0.9rem;
+	margin-top: 0.3rem;
+}
+
+.post-desc {
+	margin-top: 0.4rem;
+	color: var(--off-white);
+	font-size: 0.95rem;
 }
