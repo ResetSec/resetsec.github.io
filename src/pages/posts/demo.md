@@ -1,5 +1,6 @@
 ---
-title: "Sample CTF Writeup: Exploiting the Widget Service"
+layout: ../../layouts/BlogLayout.astro
+title: "Sample CTF Writeup"
 date: 2026-03-09
 event: "Example CTF 2026"
 category: "pwn"
@@ -14,7 +15,7 @@ draft: false
 description: "A full template demonstrating typical sections used in technical CTF writeups."
 ---
 
-# Sample CTF Writeup: Exploiting the Widget Service
+# Exploiting the Widget Service
 
 > This is a **dummy template** intended to test markdown → HTML styling for a CTF blog.  
 > It intentionally includes **many markdown constructs** so you can style them in Astro.
