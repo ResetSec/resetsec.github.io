@@ -1,7 +1,24 @@
+:root {
+  --white: #ffffff;
+  --off-white: #f1f1f1;
+  --black: #1b1b1b;
+  --light-black: #0b0b0b;
+  --dark-grey: #252525;
+  --grey: #888888;
+  --light-red: #f85149;
+  --dark-red: #da3633;
+  --blue: #38bdf8;
+  --purple: #a371f7;
+  --yellow: #e3b341;
+  --dark-green: #3fb950;
+  --light-green: #56d364;
+}
+
 body.blog-theme {
-	background-color: #1b1b1b;
-	color: #f1f1f1;
+	background-color: var(--black);
+	color: var(--off-white);
 	margin: 0;
+	font-size: 1rem;
 }
 
 body.blog-theme::before {
@@ -9,7 +26,7 @@ body.blog-theme::before {
 	position: fixed;
 	inset: 0;
 	background-size: 5vw 5vw;
-	background-image: radial-gradient(circle, #f1f1f1 1px, transparent 1px);
+	background-image: radial-gradient(circle, var(--off-white) 1px, transparent 1px);
 	animation: bgmove 120s linear infinite;
 	z-index: -1;
 }
@@ -24,22 +41,39 @@ body.blog-theme::before {
 }
 
 .blog-container {
-	background-color: #202020;
+	background-color: var(--dark-grey);
 	max-width: 60%;
 	margin: 0px auto;
 	padding: 80px 60px;
 	line-height: 1.7;
-	box-shadow: 0 0 100px 0 #0b0b0b;
+	box-shadow: 0 0 100px 0 var(--light-black);
 }
 
+/* =================================== headers ==================================== */
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+	content: "#";
+	vertical-align: middle;
+	font-size: 0.9em;
+	color: var(--grey);
+	margin-right: 0.5em;
+}
+
+/* ==================================== links ===================================== */
+
 a {
-	color: #38bdf8;
+	color: var(--blue);
 	text-decoration: none;
-	border-bottom: thin solid #38bdf8;
+	border-bottom: thin solid var(--blue);
 	transition: 0.2s;
 }
 
 a:hover {
-	color: #00ffff;
-	border-bottom-color: #00ffff;
+	color: cyan;
+	border-bottom-color: cyan;
 }
