@@ -14,6 +14,10 @@
   --light-green: #56d364;
 }
 
+p, ul, ol, blockquote, pre {
+	margin: 1.2em 0;
+}
+
 body.blog-theme {
 	background-color: var(--black);
 	color: var(--off-white);
