@@ -273,7 +273,6 @@ async function getTeamStats() {
  */
 function getCTFScore(ctf) {
   const score = Number(ctf.points) / Number(ctf.place);
-  console.log(ctf, "score:", score);
   return score;
 }
 
