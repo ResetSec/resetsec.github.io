@@ -75,7 +75,7 @@ const getAuthors = (authorValue) => {
             </div>
 
             <h2 class="post-title">
-              <a href={`/posts/${post.slug}`}>{post.title}</a>
+		    <a href={`${import.meta.env.BASE_URL}/posts/${post.slug}`}>{post.title}</a>
             </h2>
 
             {post.description && (
