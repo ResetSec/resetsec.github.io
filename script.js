@@ -4,7 +4,7 @@ const CTFTimeURL = `https://ctftime.org/team/${CTFTimeTeamID}`;
 const teamMembers = [
   {
     name: "makid3r",
-    leader: true, // add misc category
+    note: "(leader)", // add misc category
     tags: ["web", "forensics", "misc", "pwn", "mobile"],
     bio: "i like cyberpunk",
     socials: {
@@ -14,6 +14,7 @@ const teamMembers = [
   },
   {
     name: "VulnX",
+    note: "(administration)",
     tags: ["pwn", "reverse engineering", "mobile", "forensics"],
     bio: "pwning stuff...\nPresident of Crypto club @ResetSec",
     socials: {
@@ -21,6 +22,26 @@ const teamMembers = [
       GitHub: "https://github.com/VulnX",
       YouTube: "https://youtube.com/@thevulnx",
     },
+  },
+  {
+    name: "Madrat_0",
+    note: "(administration)",
+    tags: ["crypto", "web"],
+    bio: "Crypto. Chaos. No sleep.",
+    socials: {
+      GitHub: "https://github.com/Adrito-M",
+      CodeForces: "https://codeforces.com/profile/MadRat_0",
+    },
+  },
+  {
+    name: "iiNovaCore",
+    note: "(administration)",
+    tags: ["forensics", "web", "osint"],
+    bio: "memory forensics suck",
+    socials: {
+      Blog: "https://blog.ctrlgeek.studio/",
+      Github: "https://github.com/iiNovaCore",
+    }
   },
   {
     name: "0x42",
@@ -44,15 +65,6 @@ const teamMembers = [
     },
   },
   {
-    name: "Madrat_0",
-    tags: ["crypto", "web"],
-    bio: "Crypto. Chaos. No sleep.",
-    socials: {
-      GitHub: "https://github.com/Adrito-M",
-      CodeForces: "https://codeforces.com/profile/MadRat_0",
-    },
-  },
-  {
     name: "daVinci",
     tags: ["forensics", "misc", "reverse engineering"],
     bio: "",
@@ -64,15 +76,6 @@ const teamMembers = [
     socials: {
       GitHub: "https://github.com/greysneakthief",
       Instagram: "modvspwnens",
-    }
-  },
-    {
-    name: "iiNovaCore",
-    tags: ["forensics", "web", "osint"],
-    bio: "memory forensics suck",
-    socials: {
-      Blog: "https://blog.ctrlgeek.studio/",
-      Github: "https://github.com/iiNovaCore",
     }
   },
   {
@@ -219,8 +222,8 @@ function addMembers(where, members) {
     });
     pName.className = "name";
     pName.textContent = member.name;
-    if (member.leader === true) {
-      pName.setAttribute("data-leader", "true");
+    if (member.note !== undefined) {
+      pName.setAttribute("data-note", member.note);
     }
     divBio.className = "bio";
     member.bio.split("\n").forEach((line) => {

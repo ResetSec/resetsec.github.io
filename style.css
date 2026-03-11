@@ -218,8 +218,8 @@ table td {
   font-weight: bold;
 }
 
-.name[data-leader="true"]::after {
-  content: "(leader)";
+.name[data-note]::after {
+  content: attr(data-note);
   color: var(--grey);
   font-style: italic;
   margin-left: 10px;
