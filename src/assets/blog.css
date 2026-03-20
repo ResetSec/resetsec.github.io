@@ -1,20 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap');
-
-:root {
-	--white: #ffffff;
-	--off-white: #e6edf3;
-	--black: #151515;
-	--dark-black: #0b0b0b;
-	--dark-grey: #1f1f1f;
-	--grey: #555555;
-	--light-red: #f85149;
-	--dark-red: #da3633;
-	--blue: #38bdf8;
-	--purple: #a371f7;
-	--yellow: #e3b341;
-	--dark-green: #3fb950;
-	--light-green: #56d364;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 p, ul, ol, blockquote, pre {
 	margin: 1.2em 0;
@@ -26,13 +10,15 @@ p, ul, ol, blockquote, pre {
 }
 
 body.blog-theme {
-	background-color: var(--black);
 	color: var(--off-white);
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.7;
 	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
 }
 
 body.blog-theme::before {
@@ -62,10 +48,10 @@ body.blog-theme::before {
 }
 
 .blog-container {
-	background-color: var(--dark-grey);
-	max-width: 60%;
+	background: radial-gradient(var(--dark-grey), var(--black));
+	width: 100%;
+	margin-left: 25%;
 	min-height: 100dvh;
-	margin: 0px auto;
 	padding: 80px 60px;
 	box-shadow: 0 0 100px 0 var(--dark-black);
 }
@@ -94,16 +80,15 @@ h6::before {
 
 /* ==================================== links ===================================== */
 
-a {
+.blog-container a {
 	color: var(--blue);
 	text-decoration: none;
-	border-bottom: thin solid var(--blue);
-	transition: 0.2s;
+	border-bottom: thin solid transparent;
+	
 }
 
-a:hover {
-	color: cyan;
-	border-bottom-color: cyan;
+.blog-container a:hover {
+	border-bottom-color: var(--blue);
 }
 
 /* ================================= blockquotes ================================== */
@@ -126,7 +111,7 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	margin: 1.5em 0;
-	font-size: 0.95rem;
+	font-size: 1rem;
 	background-color: var(--dark-grey);
 	box-shadow: 0 0 20px 0 var(--dark-black);
 	border-radius: 6px;
@@ -170,17 +155,6 @@ code {
 
 :not(pre) > code {
 	color: var(--light-red);
-	background-color: rgb(from var(--light-red) r g b / 0.10);
-	padding: 0.15em 0.35em;;
-	border: thin solid rgb(from var(--light-red) r g b / 0.35);;
-	border-radius: 4px;
-	font-size: 0.95em;
-}
-
-@media screen and (max-width: 768px) {
-	:not(pre) > code {
-		padding: 0.07em 0.3em;
-	}
 }
 
 pre {

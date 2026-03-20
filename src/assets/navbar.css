@@ -1,0 +1,85 @@
+.navbar {
+	position: fixed;
+	max-width: 25%;
+	height: 100dvh;
+	background: linear-gradient(to left, var(--dark-grey), var(--black));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navbar-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+
+.navbar-logo i {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.navbar-logo img {
+	width: 60%;
+	margin-bottom: 20px;
+	transition: .2s;
+}
+
+.navbar-logo img:hover {
+	scale: 105%;
+}
+
+.navbar ul li {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.navbar ul li i {
+	margin-right: 1rem;
+}
+
+.navbar ul li a {
+	color: var(--white);
+	font-size: 1.5rem;
+	text-decoration: none;
+	position: relative;
+	outline: none;
+}
+
+.navbar ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 1px;
+	background-color: var(--white);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.2s ease;
+}
+
+.navbar ul li a:hover::after {
+	transform: scaleX(1);
+}
+
+.navbar .links {
+	position: absolute;
+	bottom: 30px;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.navbar .links a {
+	color: white;
+	font-size: 2rem;
+	transition: .1s;
+}
+
+.navbar .links a:hover {
+	color: var(--blue);
+}

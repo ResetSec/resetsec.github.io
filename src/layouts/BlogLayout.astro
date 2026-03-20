@@ -1,6 +1,7 @@
 ---
 import "../assets/blog.css";
-
+import "../assets/colors.css";
+import Navbar from "../components/Navbar.astro";
 const { frontmatter } = Astro.props;
 ---
 
@@ -15,6 +16,7 @@ const { frontmatter } = Astro.props;
 		<title>{frontmatter.title}</title>
 	</head>
 	<body class="blog-theme">
+		<Navbar />
 		<main class="blog-container">
 			<slot />
 		</main>
