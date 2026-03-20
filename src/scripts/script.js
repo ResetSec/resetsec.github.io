@@ -75,7 +75,7 @@ const teamMembers = [
       Instagram: "modvspwnens",
     }
   },
-    {
+  {
     name: "iiNovaCore",
     tags: ["forensics", "web", "osint"],
     bio: "memory forensics suck",
@@ -94,91 +94,91 @@ const teamMembers = [
     }
   },
   {
-      name: "hxuu",
-      tags: ["web", "osint"],
-      bio: "Taking things apart so you don’t have to.",
-      socials: {
-          Blog: "https://hxuu.github.io/",
-          GitHub: "https://github.com/hxuu/",
-          LinkedIn: "https://www.linkedin.com/in/anas-mokhtari/"
-      }
+    name: "hxuu",
+    tags: ["web", "osint"],
+    bio: "Taking things apart so you don’t have to.",
+    socials: {
+      Blog: "https://hxuu.github.io/",
+      GitHub: "https://github.com/hxuu/",
+      LinkedIn: "https://www.linkedin.com/in/anas-mokhtari/"
+    }
   },
 ];
 
 const formerMembers = [
-    {
-        name: "AntennaeVY",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "Brine",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "calx",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "FIN",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "gexxr",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "Ivan Nikolskiy",
-        tags: [],
-        bio: "",
-    },
-    {
-        name: "lh0ax",
-        tags: [],
-        bio: "",
-    },
-    {
-      name: "m3m0rydmp",
-      tags: ["web", "osint"],
-      bio: "TBD",
-    },
-    {
-        name: "ol3livi0n",
-        tags: ["web", "blockchain"],
-        bio: "Spidering the web...",
-        socials: {
-            "GitHub": "https://github.com/OI3livion",
-            "X": "https://x.com/ol3livi0n",
-        }
-    },
-    {
-        name: "seaglade",
-        tags: ["reverse engineering", "web", "forensics", "osint"],
-        bio: "maybe someday i'll be half-decent at rev and binex... o_o",
-        socials: {
-            "Website": "https://seaglade.dev",
-            "GitHub": "https://github.com/seaglade",
-        },
-    },
-    {
-        name: "Spaced out Rexy",
-        tags: [],
-        bio: "",
-    },
-    {
-      name: "Tr1dent",
-      tags: [],
-      bio: "",
-    },
-    {
-      name: "xxaxaaa",
-      tags: [],
-      bio: "",
+  {
+    name: "AntennaeVY",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "Brine",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "calx",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "FIN",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "gexxr",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "Ivan Nikolskiy",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "lh0ax",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "m3m0rydmp",
+    tags: ["web", "osint"],
+    bio: "TBD",
+  },
+  {
+    name: "ol3livi0n",
+    tags: ["web", "blockchain"],
+    bio: "Spidering the web...",
+    socials: {
+      "GitHub": "https://github.com/OI3livion",
+      "X": "https://x.com/ol3livi0n",
     }
+  },
+  {
+    name: "seaglade",
+    tags: ["reverse engineering", "web", "forensics", "osint"],
+    bio: "maybe someday i'll be half-decent at rev and binex... o_o",
+    socials: {
+      "Website": "https://seaglade.dev",
+      "GitHub": "https://github.com/seaglade",
+    },
+  },
+  {
+    name: "Spaced out Rexy",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "Tr1dent",
+    tags: [],
+    bio: "",
+  },
+  {
+    name: "xxaxaaa",
+    tags: [],
+    bio: "",
+  }
 ];
 
 function addMembers(where, members) {
@@ -205,7 +205,7 @@ function addMembers(where, members) {
     const pName = document.createElement("p");
     const divBio = document.createElement("div");
 
-    img.src = window.location.href + `/assets/profile/${member.name}.webp`;
+    img.src = import.meta.env.BASE_URL + `/assets/profile/${member.name}.webp`;
     img.alt = member.name;
     img.className = "member-pfp";
     tdImage.appendChild(img);
@@ -256,7 +256,7 @@ function addMembers(where, members) {
 }
 
 async function getTeamStats() {
-  const res = await fetch(window.location.href + "/stats.json");
+  const res = await fetch(import.meta.env.BASE_URL + "/stats.json");
   const text = await res.text();
   const stats = JSON.parse(text);
   return stats;
@@ -338,7 +338,7 @@ function addTeamStats() {
 }
 
 document.querySelector(".terminal-btn").addEventListener("click", () => {
-  window.location.href += "reset-console/";
+  window.location.href = import.meta.env.BASE_URL + "/reset-console/";
 });
 
 function showSplashAnimation() {

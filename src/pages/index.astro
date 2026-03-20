@@ -1,3 +1,6 @@
+---
+const baseURL = import.meta.env.BASE_URL;
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,39 +13,39 @@
     <!-- Open Graph tags for Discord, Twitter, etc. -->
     <meta property="og:title" content="ResetSec" />
     <meta property="og:description" content="Cybersec | CTFs • Research • Collab" />
-    <meta property="og:url" content="https://resetsec.github.io/" />
+    <meta property="og:url" content={new URL(baseURL, Astro.site)} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://resetsec.github.io/assets/logo/banner.png" />
+    <meta property="og:image" content={new URL(baseURL + "/assets/logo/banner.png", Astro.site)} />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href={`${baseURL}/style.css`} />
     <link
       rel="icon"
       type="image/png"
       sizes="128x128"
-      href="/reset-console/assets/logo/logo-128.png"
+      href={`${baseURL}/assets/logo/logo-128.png`} 
     />
     <link
       rel="icon"
       type="image/png"
       sizes="64x64"
-      href="/reset-console/assets/logo/logo-64.png"
+      href={`${baseURL}/assets/logo/logo-64.png`}
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/reset-console/assets/logo/logo-32.png"
+      href={`${baseURL}/assets/logo/logo-32.png`}
     />
-    <script src="script.js" defer></script>
+    <script src="../scripts/script.js"></script>
   </head>
 
   <body>
     <main>
       <div class="side-bar">
-        <img src="/assets/logo/logo.webp" alt="ResetSec" />
+        <img src={`${baseURL}/assets/logo/logo.webp`} alt="ResetSec" />
         <i>Next-gen world-class hackers...</i>
         <ul>
           <li>
@@ -79,7 +82,7 @@
     </main>
 
     <div class="splash-screen">
-      <img class="splash-img" src="/assets/logo/logo.webp" alt="ResetSec" />
+      <img class="splash-img" src={`${baseURL}/assets/logo/logo.webp`} alt="ResetSec" />
       <h1 class="splash-title">ResetSec</h1>
     </div>
   </body>
