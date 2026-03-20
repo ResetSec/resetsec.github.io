@@ -14,27 +14,20 @@
   --light-green: #56d364;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: var(--white);
-  font-size: 1.2rem;
-  line-height: 150%;
-  user-select: none;
-}
-
 *:not(i.fab):not(i.fas):not(i.far):not(i.fa):not(i.fa-solid):not(
     i.fa-regular
   ):not(i.fa-brands):not(svg) {
   font-family: "Courier Prime", monospace;
 }
 
+body {
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: row;
+  color: var(--white);
 }
 
 .splash-screen {
@@ -56,66 +49,14 @@ main {
 
 .splash-title {
   font-size: 7rem;
+  color: var(--white);
   font-family: "Ubuntu Mono", monospace;
-}
-
-.side-bar {
-  width: 25vw;
-  background: linear-gradient(to left, var(--dark-grey), var(--black));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
 }
 
 .main-container {
   background: radial-gradient(var(--dark-grey), var(--black));
-  width: 75vw;
-}
-
-.side-bar,
-.main-container {
-  height: 100vh;
-  overflow: auto;
-}
-
-.side-bar * {
-  margin: 10px 0;
-}
-
-.side-bar img {
-  width: 70%;
-  margin-bottom: 50px;
-}
-
-.side-bar ul li {
-  list-style-type: none;
-}
-
-.side-bar ul li a {
-  text-decoration: none;
-}
-
-.side-bar ul li a:hover {
-  border-bottom: thin solid var(--white);
-}
-
-.side-bar button {
-  background-color: transparent;
-  outline: none;
-  border: thin solid var(--white);
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.side-bar button:hover {
-  background-color: var(--white);
-  color: var(--black);
-  box-shadow: 0 0 10px 0 var(--white);
+  width: 75%;
+  margin-left: 25%;
 }
 
 .main-container {
@@ -135,6 +76,14 @@ main {
   margin-right: 15px;
 }
 
+.main-container p,
+.main-container span,
+.main-container a {
+  line-height: 150%;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -142,11 +91,13 @@ table {
 }
 
 table tr {
+  margin: 0;
   border-top: thin solid var(--white);
   border-bottom: thin solid var(--white);
 }
 
 table td {
+  margin: 0;
   padding: 20px 0;
   flex: 1;
 }
@@ -231,17 +182,23 @@ table td {
   flex-direction: column;
 }
 
+.bio ul {
+  margin: 0;
+  padding: 0;
+}
+
 .bio ul li {
   list-style-position: inside;
   list-style-type: disclosure-closed;
 }
 
-a {
+.main-container a {
+  color: var(--white);
   text-decoration: none;
   transition: 0.2s;
 }
 
-a:hover {
+.main-container a:hover {
   border-bottom: thin solid var(--white);
 }
 
@@ -254,15 +211,6 @@ a:hover {
 
   .splash-title {
     font-size: 3rem;
-  }
-
-  .side-bar {
-    padding: 5px;
-  }
-
-  .side-bar button {
-    font-size: 0.7rem;
-    padding: 5px;
   }
 
   .main-container {

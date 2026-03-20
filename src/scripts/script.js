@@ -96,7 +96,7 @@ const teamMembers = [
   {
     name: "hxuu",
     tags: ["web", "osint"],
-    bio: "Taking things apart so you don’t have to.",
+    bio: "Taking things apart so you don't have to.",
     socials: {
       Blog: "https://hxuu.github.io/",
       GitHub: "https://github.com/hxuu/",
@@ -336,10 +336,6 @@ function addTeamStats() {
     })
   );
 }
-
-document.querySelector(".terminal-btn").addEventListener("click", () => {
-  window.location.href = import.meta.env.BASE_URL + "/reset-console/";
-});
 
 function showSplashAnimation() {
   // config variables
