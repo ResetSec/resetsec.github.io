@@ -289,3 +289,17 @@ a:hover {
     margin: 0 2px;
   }
 }
+
+.footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  border-top: thin solid var(--white);
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  color: var(--grey);
+  font-style: italic;
+}
