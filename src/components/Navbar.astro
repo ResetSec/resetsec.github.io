@@ -1,0 +1,27 @@
+---
+import "../styles/navbar.css";
+const { title = "ResetSec" } = Astro.props;
+let base = import.meta.env.BASE_URL;
+---
+
+<nav class="navbar">
+  <div class="nav-logo">
+    <img src={`${base}/assets/logo.webp`} alt="ResetSec logo" />
+  </div>
+  <span class="nav-title">
+    <span>{title}</span>
+  </span>
+  <div class="nav-links">
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Posts</a>
+      </li>
+      <li>
+        <a href="">Achievements</a>
+      </li>
+    </ul>
+  </div>
+</nav>

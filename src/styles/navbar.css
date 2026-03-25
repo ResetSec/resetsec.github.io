@@ -1,0 +1,73 @@
+.navbar {
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 50%);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 80%;
+}
+
+.nav-logo img {
+  height: 100%;
+}
+
+.nav-title {
+  font-size: 2rem;
+  position: relative;
+  font-family: monospace;
+}
+
+.nav-title span::before {
+  content: "$ ./";
+  color: var(--dark-green);
+  margin-right: 2px;
+}
+
+.nav-title span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: -15px;
+  bottom: 0;
+  height: 100%;
+  width: 15px;
+  background-color: var(--dark-green);
+  animation: blink 1.5s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links ul li {
+  padding: 10px;
+}
+
+.nav-links ul li a {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.nav-links ul li a::after {
+  background-color: var(--black);
+}
