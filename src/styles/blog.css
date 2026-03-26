@@ -163,20 +163,54 @@ summary {
   top: 150px;
   font-size: 0.9em;
   line-height: 1.5em;
+  --corner-size: 150px;
+}
+
+.side-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--corner-size);
+  height: var(--corner-size);
+  border-top: 2px solid var(--grey);
+  border-left: 2px solid var(--grey);
+}
+
+.side-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: var(--corner-size);
+  height: var(--corner-size);
+  border-bottom: 2px solid var(--grey);
+  border-right: 2px solid var(--grey);
+}
+
+.side-bar .label {
+  position: absolute;
+  top: -30px;
+  left: 6px;
+  background: var(--grey);
+  color: var(--white);
+  padding: 2px 10px;
+  font-weight: bold;
+  transform: skewX(-20deg);
+}
+
+.side-bar .label span {
+  display: inline-block;
+  transform: skewX(20deg); /* fix text skew */
 }
 
 .toc {
-  border-left: 2px solid rgb(from var(--grey) r g b / 0.5);
   padding: 0 10px;
   list-style-type: none;
   max-height: calc(100dvh - 200px);
   overflow-y: auto;
   scrollbar-width: none;
   box-shadow: 0 0 10px 0 var(--white);
-}
-
-.toc::before {
-  content: "Contents";
 }
 
 .toc li::before {
