@@ -133,6 +133,11 @@ main h1 {
 
 .member-details ul {
   margin-top: 10px;
-  list-style-type: disclosure-closed;
+  list-style-type: none;
   line-height: 2rem;
+}
+
+.member-details ul li::before {
+  content: "-";
+  margin-right: 10px;
 }
