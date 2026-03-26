@@ -1,0 +1,138 @@
+body {
+  /* Override body style for homepage */
+  background-color: var(--white);
+  /* background-image: unset; */
+}
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5rem;
+}
+
+main p {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.members-list {
+  background-color: var(--white);
+  box-shadow: 0 0 20px 5px var(--white);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+  border-bottom: thin solid rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+  width: 150px;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.member-name {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.member-name[data-rank]::after {
+  content: attr(data-rank);
+  color: var(--grey);
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: normal;
+  padding: 3px 10px;
+  margin: 0 5px;
+}
+
+.member-tags {
+  margin: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member-tag::before {
+  padding: 1px 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  margin: 0 3px;
+  white-space: nowrap;
+  color: var(--white);
+}
+
+.member-tag[data-tag="pwn"]::before {
+  content: attr(data-tag);
+  background-color: var(--red);
+}
+
+.member-tag[data-tag="web"]::before {
+  content: attr(data-tag);
+  background-color: var(--blue);
+}
+
+.member-tag[data-tag="forensics"]::before {
+  content: attr(data-tag);
+  background-color: var(--purple);
+}
+
+.member-tag[data-tag="mobile"]::before {
+  content: attr(data-tag);
+  background-color: var(--yellow);
+}
+
+.member-tag[data-tag="crypto"]::before {
+  content: attr(data-tag);
+  background-color: var(--dark-green);
+}
+
+.member-tag[data-tag="hardware"]::before {
+  content: attr(data-tag);
+  background-color: var(--grey);
+}
+
+.member-tag[data-tag="reverse engineering"]::before {
+  content: attr(data-tag);
+  background-color: var(--green);
+}
+
+.member-tag[data-tag="osint"]::before {
+  content: attr(data-tag);
+  background-color: var(--dark-red);
+}
+
+.member-tag[data-tag="dev"]::before {
+  content: attr(data-tag);
+  background-color: var(--dark-red);
+}
+
+.member-bio {
+  font-style: italic;
+  white-space: pre-line;
+}
+
+.member-details ul {
+  margin-top: 10px;
+  list-style-type: disclosure-closed;
+  line-height: 2rem;
+}
