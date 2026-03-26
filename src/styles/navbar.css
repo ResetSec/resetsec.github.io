@@ -29,7 +29,7 @@ main {
 .nav-title {
   font-size: 2rem;
   position: relative;
-  font-family: monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .nav-title span::before {
