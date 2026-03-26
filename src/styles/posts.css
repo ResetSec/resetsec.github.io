@@ -91,7 +91,7 @@ main {
 }
 
 .post-title {
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--black);
   line-height: 1.35;
@@ -99,7 +99,7 @@ main {
 }
 
 .post-desc {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   color: var(--grey);
   line-height: 1.5;
 }
