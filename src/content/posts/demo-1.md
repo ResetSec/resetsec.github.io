@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Blog.astro
 title: "Sample CTF Writeup"
 date: 2026-03-09
 event: "Example CTF 2026"
