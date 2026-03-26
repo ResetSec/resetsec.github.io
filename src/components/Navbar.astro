@@ -25,3 +25,23 @@ let base = import.meta.env.BASE_URL;
     </ul>
   </div>
 </nav>
+
+<script>
+  const title = document.querySelector(".nav-title span");
+  if (title) {
+    const text = title.textContent;
+    title.textContent = "";
+    const totalDuration = 1000;
+    const delay = totalDuration / text.length;
+    let i = 0;
+    function type() {
+      if (!title) return;
+      if (i < text.length) {
+        title.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, delay);
+      }
+    }
+    type();
+  }
+</script>
