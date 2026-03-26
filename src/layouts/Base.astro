@@ -1,12 +1,13 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
+let base = import.meta.env.BASE_URL;
 const {
   title = "ResetSec",
   description = "Official website of Reset Security: a collaborative cybersecurity team competing in CTFs, researching exploits, and sharing knowledge.",
   ogDescription = "Cybersec | CTFs • Research • Collab",
   url = "https://resetsec.github.io/",
-  image = "https://resetsec.github.io/assets/logo/banner.png",
+  image = `${base}/assets/logo-static.webp`,
   type = "website",
 } = Astro.props;
 ---
@@ -38,21 +39,8 @@ const {
     <!-- Favicons -->
     <link
       rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="/reset-console/assets/logo/logo-128.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="/reset-console/assets/logo/logo-64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/reset-console/assets/logo/logo-32.png"
+      type="image/webp"
+      href=`${base}/assets/logo-static.webp`
     />
 
     <!-- Extra head injection -->

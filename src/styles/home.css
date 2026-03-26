@@ -1,9 +1,3 @@
-body {
-  /* Override body style for homepage */
-  background-color: var(--white);
-  /* background-image: unset; */
-}
-
 main {
   padding-left: 10%;
   padding-right: 10%;

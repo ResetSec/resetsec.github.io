@@ -4,7 +4,7 @@
   --white: #ffffff;
   --off-white: #fafafa;
   --black: #0b0b0b;
-  --grey: #555555;
+  --grey: #888888;
   --dark-grey: #252525;
   --red: #f85149;
   --dark-red: #da3633;
@@ -14,6 +14,11 @@
   --yellow: #e3b341;
   --green: #56d364;
   --dark-green: #3fb950;
+}
+
+html {
+  scroll-padding-top: 120px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -29,7 +34,7 @@
 }
 
 body {
-  background-color: var(--off-white);
+  background-color: var(--white);
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
