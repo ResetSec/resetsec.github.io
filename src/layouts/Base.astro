@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Socials from "../components/Socials.astro";
 import "../styles/global.css";
 let base = import.meta.env.BASE_URL;
 const {
@@ -52,5 +53,6 @@ const {
     <main>
       <slot />
     </main>
+    <Socials />
   </body>
 </html>
