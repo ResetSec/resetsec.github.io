@@ -11,10 +11,9 @@ const {
   description,
 } = Astro.props.frontmatter;
 const { id } = Astro.props;
-let base = import.meta.env.BASE_URL;
 ---
 
-<a href=`${base}/posts/${id}`>
+<a href=`/posts/${id}`>
   <div class="post-card">
     <div class="post-meta">
       <div class="meta-left">

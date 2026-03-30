@@ -1,12 +1,11 @@
 ---
 import "../styles/navbar.css";
 const { title = "ResetSec" } = Astro.props;
-let base = import.meta.env.BASE_URL;
 ---
 
 <nav class="navbar">
   <div class="nav-logo">
-    <img src={`${base}/assets/logo.webp`} alt="ResetSec logo" />
+    <img src="/assets/logo.webp" alt="ResetSec logo" />
   </div>
   <span class="nav-title">
     <span>{title}</span>
@@ -14,13 +13,13 @@ let base = import.meta.env.BASE_URL;
   <div class="nav-links">
     <ul>
       <li>
-        <a href=`${base}/`>Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a href=`${base}/posts`>Posts</a>
+        <a href="/posts">Posts</a>
       </li>
       <li>
-        <a href="">Achievements</a>
+        <a href="#">Achievements</a>
       </li>
     </ul>
   </div>
@@ -31,10 +30,10 @@ let base = import.meta.env.BASE_URL;
 <div class="mobile-links">
   <ul>
     <li>
-      <a href=`${base}/`>Home</a>
+      <a href=`/`>Home</a>
     </li>
     <li>
-      <a href=`${base}/posts`>Posts</a>
+      <a href=`/posts`>Posts</a>
     </li>
     <li>
       <a href="">Achievements</a>

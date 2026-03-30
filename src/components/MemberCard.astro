@@ -1,10 +1,9 @@
 ---
-let base = import.meta.env.BASE_URL;
 const { name, rank = null, tags = [], bio, socials = {} } = Astro.props;
 ---
 
 <div class="member">
-  <img src=`${base}/assets/profile/${name}.webp` alt=`${name} logo` />
+  <img src=`/assets/profile/${name}.webp` alt=`${name} logo` />
   <div class="member-details">
     <span class="member-name" data-rank={rank}>{name}</span>
     <div class="member-tags">

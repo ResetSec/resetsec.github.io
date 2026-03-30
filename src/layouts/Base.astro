@@ -2,13 +2,12 @@
 import Navbar from "../components/Navbar.astro";
 import Socials from "../components/Socials.astro";
 import "../styles/global.css";
-let base = import.meta.env.BASE_URL;
 const {
   title = "ResetSec",
   description = "Official website of Reset Security: a collaborative cybersecurity team competing in CTFs, researching exploits, and sharing knowledge.",
   ogDescription = "Cybersec | CTFs • Research • Collab",
   url = "https://resetsec.xyz/",
-  image = `${base}/assets/logo-static.webp`,
+  image = "/assets/logo-static.webp",
   type = "website",
 } = Astro.props;
 ---
@@ -41,7 +40,7 @@ const {
     <link
       rel="icon"
       type="image/webp"
-      href=`${base}/assets/logo-static.webp`
+      href="/assets/logo-static.webp"
     />
 
     <!-- Extra head injection -->
