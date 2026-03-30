@@ -1,0 +1,89 @@
+[
+  {
+    "name": "makid3r",
+    "rank": "(leader)",
+    "tags": ["web", "forensics", "misc", "pwn", "mobile"],
+    "bio": "i like cyberpunk",
+    "socials": {
+      "Blog": "https://makider.me",
+      "GitHub": "https://github.com/N1kkogg"
+    }
+  },
+  {
+    "name": "VulnX",
+    "rank": "(administration)",
+    "tags": ["pwn", "reverse engineering", "mobile", "forensics"],
+    "bio": "pwning stuff...\nPresident of Crypto club @ResetSec",
+    "socials": {
+      "Website": "https://vulnx.github.io",
+      "GitHub": "https://github.com/VulnX",
+      "YouTube": "https://youtube.com/@thevulnx"
+    }
+  },
+  {
+    "name": "Madrat_0",
+    "rank": "(administration)",
+    "tags": ["crypto", "web"],
+    "bio": "Crypto. Chaos. No sleep.",
+    "socials": {
+      "GitHub": "https://github.com/Adrito-M",
+      "CodeForces": "https://codeforces.com/profile/MadRat_0"
+    }
+  },
+  {
+    "name": "iiNovaCore",
+    "rank": "(administration)",
+    "tags": ["forensics", "web", "osint"],
+    "bio": "memory forensics suck",
+    "socials": {
+      "Blog": "https://blog.ctrlgeek.studio/",
+      "Github": "https://github.com/iiNovaCore"
+    }
+  },
+  {
+    "name": "0x42",
+    "tags": ["osint", "forensics", "hardware"],
+    "bio": "The web whispers. I listen, uncovering patterns where others see noise.",
+    "socials": { "GitHub": "https://github.com/TimelessFez" }
+  },
+  { "name": "calmred", "tags": ["forensics"], "bio": "\"TBD\" - calmred" },
+  {
+    "name": "Kibov",
+    "tags": ["web", "reverse engineering"],
+    "bio": "Sometimes I know what I'm doing",
+    "socials": { "Blog": "https://kibov.pl/posts/" }
+  },
+  {
+    "name": "daVinci",
+    "tags": ["forensics", "misc", "reverse engineering"],
+    "bio": ""
+  },
+  {
+    "name": "greysneakthief",
+    "tags": ["osint", "forensics", "web"],
+    "bio": "Hydroponics and coffee/tea/mixology aficionado by day. CTF enjoyer by night.",
+    "socials": {
+      "GitHub": "https://github.com/greysneakthief",
+      "Instagram": "https://www.instagram.com/modvspwnens/"
+    }
+  },
+  {
+    "name": "rayqu4z4",
+    "tags": ["reverse engineering", "pwn"],
+    "bio": "every dream is illusion until you bring it to life",
+    "socials": {
+      "GitHub": "https://github.com/prathampopatiya",
+      "rootme": "https://www.root-me.org/bu11doz3r"
+    }
+  },
+  {
+    "name": "hxuu",
+    "tags": ["web", "osint"],
+    "bio": "Taking things apart so you don’t have to.",
+    "socials": {
+      "Blog": "https://hxuu.github.io/",
+      "GitHub": "https://github.com/hxuu/",
+      "LinkedIn": "https://www.linkedin.com/in/anas-mokhtari/"
+    }
+  }
+]

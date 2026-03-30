@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import MemberCard from "../components/MemberCard.astro";
+import members from "../data/members.json";
+import formerMembers from "../data/former-members.json";
+import "../styles/home.css";
+---
+
+<Base>
+  <p>
+    We are a CTF Team created by some nerds on Reddit that hopped into a discord
+    together and instantly became a big, weird, international family :P <br />
+    <i>(no, we don't know how it happened)</i>
+  </p>
+  <h1>Team Members</h1>
+  <div class="members-list">
+    {
+      members.map((member) => (
+        <MemberCard {...member} />
+      ))
+    }
+  </div>
+
+  <h1>Former Members</h1>
+  <div class="members-list">
+    {
+      formerMembers.map((member) => (
+        <MemberCard {...member} />
+      ))
+    }
+  </div>
+</Base>

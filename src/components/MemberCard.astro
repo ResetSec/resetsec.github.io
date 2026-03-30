@@ -1,0 +1,28 @@
+---
+let base = import.meta.env.BASE_URL;
+const { name, rank = null, tags = [], bio, socials = {} } = Astro.props;
+---
+
+<div class="member">
+  <img src=`${base}/assets/profile/${name}.webp` alt=`${name} logo` />
+  <div class="member-details">
+    <span class="member-name" data-rank={rank}>{name}</span>
+    <div class="member-tags">
+      {tags.map((tag) => <span class="member-tag" data-tag={tag} />)}
+    </div>
+    <span class="member-bio">{bio}</span>
+    {
+      Object.entries(socials).length > 0 && (
+        <ul>
+          {Object.entries(socials).map(([name, url]) => (
+            <li>
+              <a href={url as string} target="_blank" rel="noopener noreferrer">
+                {name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</div>
