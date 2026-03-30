@@ -130,7 +130,7 @@ main {
   margin-top: 0.4rem;
 }
 
-.post-footer > div {
+.post-footer>div {
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -149,13 +149,31 @@ main {
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
-  .post-card {
-    width: 45%;
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 5%;
+  }
+
+  .page-description {
+    font-size: 1.1rem;
+  }
+
+  .posts-container {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post-title {
+    font-size: 1.4rem;
+  }
+
+  .post-desc {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .post-card {
     width: 100%;
   }

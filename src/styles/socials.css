@@ -9,11 +9,11 @@
 }
 
 .socials a {
-	color: unset;
+    color: unset;
 }
 
 .socials a::after {
-	all: unset;
+    all: unset;
 }
 
 .ico {
@@ -66,5 +66,11 @@
     100% {
         top: -10%;
         left: -10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .socials {
+        display: none;
     }
 }

@@ -135,3 +135,62 @@ main h1 {
   content: "-";
   margin-right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2rem;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  main p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .members-list {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .member-details {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .member-name {
+    font-size: 1.3rem;
+  }
+
+  .member-tags {
+    justify-content: center;
+  }
+
+  .member-details ul {
+    text-align: left;
+    display: inline-block;
+  }
+}

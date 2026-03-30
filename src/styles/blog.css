@@ -19,7 +19,30 @@ main {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 20%);
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+
+
+
 /* =================================== headers ==================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
 
 h1::before,
 h2::before,
@@ -33,6 +56,7 @@ h6::before {
   color: var(--grey);
   margin-right: 0.5em;
 }
+
 
 /* ==================================== lists ===================================== */
 
@@ -110,7 +134,7 @@ code {
   font-family: "IBM Plex Mono";
 }
 
-:not(pre) > code {
+:not(pre)>code {
   color: var(--dark-red);
 }
 
@@ -135,9 +159,9 @@ pre * {
 
 @media screen and (max-width: 768px) {
   pre {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 10px 20px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1rem;
   }
 }
 
@@ -165,6 +189,13 @@ summary {
   line-height: 1.5em;
   --corner-size: 150px;
 }
+
+@media screen and (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+
 
 .side-bar::before {
   content: "";
@@ -201,7 +232,8 @@ summary {
 
 .side-bar .label span {
   display: inline-block;
-  transform: skewX(20deg); /* fix text skew */
+  transform: skewX(20deg);
+  /* fix text skew */
 }
 
 .toc {
