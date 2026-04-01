@@ -3,21 +3,47 @@
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(255, 255, 255, 70%);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 50%);
+
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+  backdrop-filter: none;
+  box-shadow: none;
+
   display: flex;
   align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
   justify-content: space-between;
-  z-index: 1;
+
+  padding-left: 7rem;
+  padding-right: 5rem;
+
+  z-index: 11;
 }
 
 main {
   margin-top: 100px;
 }
 
+/* 🔥 CENTER AUTHOR */
+.nav-author {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-author span {
+  font-size: 1.1rem;
+}
+
+/* Logo */
 .nav-logo {
   height: 80%;
 }
@@ -26,6 +52,7 @@ main {
   height: 100%;
 }
 
+/* Title */
 .nav-title {
   font-size: 2rem;
   position: relative;
@@ -51,19 +78,12 @@ main {
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
+/* Links */
 .nav-links ul {
   list-style-type: none;
   display: flex;
@@ -76,13 +96,14 @@ main {
 
 .nav-links ul li a {
   font-size: 1.2rem;
-  color: var(--black);
+  color: var(--dark-green);
 }
 
 .nav-links ul li a::after {
   background-color: var(--black);
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   background: none;
@@ -93,6 +114,7 @@ main {
   z-index: 10;
 }
 
+/* Mobile menu */
 .mobile-links {
   display: none;
 }
@@ -108,9 +130,9 @@ main {
     margin-top: 60px;
   }
 
-
   .nav-logo,
-  .nav-links {
+  .nav-links,
+  .nav-author { /* 👈 hide author on mobile */
     display: none;
   }
 
@@ -122,7 +144,6 @@ main {
     text-overflow: ellipsis;
     display: block;
   }
-
 
   .hamburger {
     display: block;
@@ -144,10 +165,6 @@ main {
     z-index: 5;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-
-
-
-
 
   .mobile-links.active {
     max-height: 300px;
@@ -173,5 +190,4 @@ main {
   .mobile-links ul li a::after {
     background-color: var(--black);
   }
-
 }

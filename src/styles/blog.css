@@ -124,10 +124,16 @@ table tbody tr:hover {
 
 /* ==================================== images ==================================== */
 
-img {
-  max-width: 100%;
+.main-container img {
+  max-width: 100%;        /* never wider than container */
+  max-height: 600px;      /* cap the height */
+  width: auto;            /* maintain aspect ratio */
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;    /* center it */
+  border-radius: 6px;     /* optional style */
+  object-fit: contain;    /* no stretching */
 }
-
 /* ================================= code blocks ================================== */
 
 code {
@@ -242,7 +248,6 @@ summary {
   max-height: calc(100dvh - 200px);
   overflow-y: auto;
   scrollbar-width: none;
-  box-shadow: 0 0 10px 0 var(--white);
 }
 
 .toc li::before {

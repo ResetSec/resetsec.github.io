@@ -3,9 +3,13 @@ import Base from "../layouts/Base.astro";
 import MemberCard from "../components/MemberCard.astro";
 import members from "../data/members.json";
 import formerMembers from "../data/former-members.json";
+import ResetSidebar from "../components/ResetSidebar.astro";
 import "../styles/home.css";
+import Navbar from "../components/Navbar.astro";
 ---
 
+<Navbar />
+<ResetSidebar />
 <Base>
   <p>
     We are a CTF Team created by some nerds on Reddit that hopped into a discord

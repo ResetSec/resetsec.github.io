@@ -3,7 +3,7 @@ title: "Astralogy"
 date: 2026-03-29
 event: "Kalmar CTF 2026"
 category: "pwn"
-difficulty: "medium"
+image: "/assets/blog/vulnx/astral.png"
 author:
  - VulnX
 tags:
@@ -129,7 +129,7 @@ Clearly the hardening patch does 3 things:
 
 1. Disable DF (Direction Flag): This is standard x86_64 to ensure string operations are performed in the right order in kernel. [See](https://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-4.html):
    
-   > In the beginning of the `startup_32` function, we can see the `cld` instruction which clears the `DF` bit in the [flags](https://en.wikipedia.org/wiki/FLAGS_register) register. When the direction flag is clear, all string operations like [stos](http://x86.renejeschke.de/html/file_module_x86_id_306.html), [scas](http://x86.renejeschke.de/html/file_module_x86_id_287.html) and others will increment the index registers `esi` or `edi`. We need to clear the direction flag because later we will use strings operations to perform various operations such as clearing space for page tables.
+   > In the beginning of the `startup_32` function, we can see the `cld` instruction which clears the `DF` bit in the [flags](https://en.wikipedia.org/wiki/FLAGS_register) register. When the direction flag is clear, all string operations like [stos](http://x86.renejeschke.de/html/file_module_x86_id_306.html), [scas](http://x86.renejeschke.de/html/file_module_x86_id_287.html) and others will increment the index registers `esi` or `edi`. We need to clear the direction flag because later we will use strings operations to perform various operations such as clearing space for page tables.
 
 2. Enable [SMEP](https://en.wikipedia.org/wiki/Control_register#SMEP) support. This is also a standard practice to prevent raw `ret2usr` attacks.
 
