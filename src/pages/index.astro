@@ -7,15 +7,19 @@ import ResetSidebar from "../components/ResetSidebar.astro";
 import "../styles/home.css";
 import Navbar from "../components/Navbar.astro";
 ---
-
+<style>
+  
+</style>
 <Navbar />
 <ResetSidebar />
 <Base>
-  <p>
-    We are a CTF Team created by some nerds on Reddit that hopped into a discord
-    together and instantly became a big, weird, international family :P <br />
-    <i>(no, we don't know how it happened)</i>
-  </p>
+  <!-- Include the flag-icons stylesheet in your <head> somewhere globally or in your layout -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+
+<p class="about-intro">
+  Reset Security is a collaborative, international <strong>CTF and cybersecurity team</strong>, playfully represented
+   by the Antarctica flag <span class="fi fi-aq"></span>.
+</p>
   <h1>Team Members</h1>
   <div class="members-list">
     {
