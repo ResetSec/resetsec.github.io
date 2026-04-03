@@ -1,5 +1,5 @@
 ---
-title: Kittiez!!!!!
+title: PatriotCTF 2025 OSINT writeups
 event: "PatriotCTF 2025"
 category: "OSINT"
 description: Follow along as we solve the two main OSINT tasks of PatriotCTF 2025.
@@ -22,19 +22,19 @@ Hey! I was able to compete with some of the wonderful people at ResetSec for thi
 This challenge gives you a text file with the following.
 
 ```
-I lost it all in one bad tick—
+I lost it all in one bad tick-
 my feline Vault, gone *way* too quick.
-A virus on my janky ’puter
+A virus on my janky 'puter
 went boom and turned my cats to neuter.
 
 I had so many cats in store,
-but one’s the one my heart longs for.
+but one's the one my heart longs for.
 If I could see that pic again,
 my nine lives might come back to ten.
 
-For “maximum security” flair,
+For "maximum security" flair,
 I hashed each cat with loving care.
-Couldn’t back up the pics themselves—
+Couldn't back up the pics themselves-
 the feds would sniff them off my shelves.
 
 So now I search through bits and trash

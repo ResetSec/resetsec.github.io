@@ -26,8 +26,8 @@ body {
   font-family: "Courier Prime", monospace;
   font-size: 1.2rem;
   margin: 0;
-  background-color: var(--black); /* <- ensures the page is dark */
-  color: var(--white);           /* <- ensures default text is white */
+  background-color: var(--black);
+  color: var(--white);           
 }
 
 * {
@@ -35,37 +35,33 @@ body {
   color: var(--white);
 }
 
-/* Layout */
 .layout {
   display: flex;
 }
 
-/* Sidebar (fixed) */
 .side-bar {
   position: fixed;
-  top: 0; /* start at the very top */
+  top: 0;
   left: 0;
-  height: 100vh; /* full viewport height */
+  height: 100vh; 
   width: 25vw;
-  padding: 250px 30px 0 30px; /* slightly wider sides */
+  padding: 250px 30px 0 30px; 
   background: linear-gradient(to bottom, var(--dark-grey), var(--black));
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* allow full width children */
-  z-index: 10; /* make sure it stays above main content */
+  align-items: stretch;
+  z-index: 10; 
 }
 
-/* Main content */
 .main-container {
   margin-left: 25vw;
   flex: 1;
   padding: 50px;
   background: radial-gradient(var(--dark-grey), var(--black));
 }
-/* Sidebar content */
 .side-bar img {
   width: 70%;
-  margin: 0 auto 40px auto; /* center image */
+  margin: 0 auto 40px auto; 
   display: block;
 }
 
@@ -73,13 +69,13 @@ body {
   margin-bottom: 5px;
   display: block;
   color: var(--white);
-  text-align: center; /* center text */
+  text-align: center; 
 }
 
 .side-bar ul {
   width: 100%;
-  max-width: 220px;   /* controls how wide the list feels */
-  margin: 0 auto;     /* 🔥 centers the whole block */
+  max-width: 220px;   
+  margin: 0 auto;    
   padding: 0;
 }
 
@@ -114,7 +110,6 @@ body {
   color: var(--black);
 }
 
-/* Headings */
 .main-container h1 {
   font-size: 2rem;
   margin-top: 60px;
@@ -132,7 +127,6 @@ body {
   text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .side-bar {
     width: 200px;
@@ -151,15 +145,12 @@ body {
 
 <html lang="en">
   <head>
-    <!-- Basic -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={url} />
@@ -168,23 +159,19 @@ body {
 
 
 
-    <!-- Styles -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- Favicons -->
     <link rel="icon" type="image/webp" href="/assets/logo-static.webp" />
 
     <slot name="head" />
   </head>
 
   <body>
-    <!--<Navbar title={title} /> -->
     <div class="layout">
 
-      <!-- MAIN CONTENT -->
       <main class="main-container">
         <slot />
         <footer class="footer">
