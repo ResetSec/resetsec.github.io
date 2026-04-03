@@ -7,7 +7,7 @@ date: 2025-11-03
 tags:
   - ctf
   - osint
-image: assets/blog/nova/osint-patriotctf.png
+image: /assets/blog/nova/osint-patriotctf.png
 author:
   - iiNovaCore
 ---

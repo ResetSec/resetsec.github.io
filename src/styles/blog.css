@@ -31,7 +31,6 @@ main {
 
 
 
-/* =================================== headers ==================================== */
 
 h1,
 h2,
@@ -58,7 +57,6 @@ h6::before {
 }
 
 
-/* ==================================== lists ===================================== */
 
 main ul {
   list-style-type: none;
@@ -73,7 +71,6 @@ main ol {
   padding: revert;
 }
 
-/* ================================= blockquotes ================================== */
 
 blockquote {
   border-left: 5px solid var(--purple);
@@ -87,7 +84,6 @@ blockquote p {
   margin: 0;
 }
 
-/* ==================================== tables ==================================== */
 
 table {
   width: 100%;
@@ -122,19 +118,17 @@ table tbody tr:hover {
   background-color: #f1f1f1;
 }
 
-/* ==================================== images ==================================== */
 
 .main-container img {
-  max-width: 100%;        /* never wider than container */
-  max-height: 600px;      /* cap the height */
-  width: auto;            /* maintain aspect ratio */
+  max-width: 100%;        
+  max-height: 600px;      
+  width: auto;            
   height: auto;
   display: block;
-  margin: 1.5rem auto;    /* center it */
-  border-radius: 6px;     /* optional style */
-  object-fit: contain;    /* no stretching */
+  margin: 1.5rem auto;    
+  border-radius: 6px;    
+  object-fit: contain;   
 }
-/* ================================= code blocks ================================== */
 
 code {
   font-family: "IBM Plex Mono";
@@ -171,7 +165,6 @@ pre * {
   }
 }
 
-/* =================================== divider ==================================== */
 
 hr {
   margin-top: 2.5rem;
@@ -179,7 +172,6 @@ hr {
   border: thin solid rgb(from var(--grey) r g b / 0.2);
 }
 
-/* ================================= collapsable ================================== */
 
 summary {
   margin-top: 10px;
@@ -239,7 +231,6 @@ summary {
 .side-bar .label span {
   display: inline-block;
   transform: skewX(20deg);
-  /* fix text skew */
 }
 
 .toc {

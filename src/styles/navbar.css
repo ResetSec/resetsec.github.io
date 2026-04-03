@@ -22,7 +22,6 @@ main {
   margin-top: 100px;
 }
 
-/* 🔥 CENTER AUTHOR */
 .nav-author {
   position: absolute;
   left: 50%;
@@ -43,7 +42,6 @@ main {
   font-size: 1.1rem;
 }
 
-/* Logo */
 .nav-logo {
   height: 80%;
 }
@@ -52,7 +50,6 @@ main {
   height: 100%;
 }
 
-/* Title */
 .nav-title {
   font-size: 2rem;
   position: relative;
@@ -83,7 +80,6 @@ main {
   100% { opacity: 1; }
 }
 
-/* Links */
 .nav-links ul {
   list-style-type: none;
   display: flex;
@@ -103,7 +99,6 @@ main {
   background-color: var(--black);
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   background: none;
@@ -114,7 +109,6 @@ main {
   z-index: 10;
 }
 
-/* Mobile menu */
 .mobile-links {
   display: none;
 }
@@ -132,7 +126,7 @@ main {
 
   .nav-logo,
   .nav-links,
-  .nav-author { /* 👈 hide author on mobile */
+  .nav-author { 
     display: none;
   }
 

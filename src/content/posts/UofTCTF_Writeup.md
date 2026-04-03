@@ -9,7 +9,7 @@ tags:
   - misc
   - forensics
   - osint
-image: assets/blog/nova/uoft_flag.png
+image: /assets/blog/nova/uoft_flag.png
 author:
   - iiNovaCore
 ---
