@@ -15,8 +15,8 @@ main h1 {
 }
 
 .members-list {
-  background-color: var(--white);
-  box-shadow: 0 0 20px 5px var(--white);
+  background-color: var(--dark-grey);
+  box-shadow: 0 0 20px 5px var(--dark-grey);
   padding: 5rem 2rem;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,4 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Socials from "../components/Socials.astro";
 import "../styles/global.css";
 const {
   title = "ResetSec",
@@ -8,50 +6,180 @@ const {
   ogDescription = "Cybersec | CTFs • Research • Collab",
   url = "https://resetsec.xyz/",
   image = "/assets/logo-static.webp",
-  type = "website",
+  type = "website"
 } = Astro.props;
 ---
 
 <!doctype html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #1b1b1b;
+  --dark-grey: #252525;
+  --grey: #888888;
+}
+
+/* Base */
+body {
+  font-family: "Courier Prime", monospace;
+  font-size: 1.2rem;
+  margin: 0;
+  background-color: var(--black);
+  color: var(--white);           
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+.layout {
+  display: flex;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  width: 25vw;
+  padding: 250px 30px 0 30px; 
+  background: linear-gradient(to bottom, var(--dark-grey), var(--black));
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 10; 
+}
+
+.main-container {
+  margin-left: 25vw;
+  flex: 1;
+  padding: 50px;
+  background: radial-gradient(var(--dark-grey), var(--black));
+}
+.side-bar img {
+  width: 70%;
+  margin: 0 auto 40px auto; 
+  display: block;
+}
+
+.side-bar i {
+  margin-bottom: 5px;
+  display: block;
+  color: var(--white);
+  text-align: center; 
+}
+
+.side-bar ul {
+  width: 100%;
+  max-width: 220px;   
+  margin: 0 auto;    
+  padding: 0;
+}
+
+.side-bar li {
+  width: 100%;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.side-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.side-bar a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.side-bar button {
+  background: transparent;
+  border: 1px solid var(--white);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.side-bar button:hover {
+  background: var(--black);
+  color: var(--black);
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+.main-container h1::before {
+  content: "#";
+  color: var(--grey);
+  margin-right: 10px;
+}
+
+.footer {
+  margin-top: 60px;
+  color: var(--grey);
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .side-bar {
+    width: 200px;
+  }
+
+  .main-container {
+    margin-left: 200px;
+    padding: 30px;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
+</style>
+
 <html lang="en">
   <head>
-    <!-- Basic -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={url} />
     <meta property="og:type" content={type} />
     <meta property="og:image" content={image} />
 
-    <!-- Styles -->
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- Favicons -->
-    <link
-      rel="icon"
-      type="image/webp"
-      href="/assets/logo-static.webp"
-    />
+    <link rel="icon" type="image/webp" href="/assets/logo-static.webp" />
 
-    <!-- Extra head injection -->
     <slot name="head" />
   </head>
 
   <body>
-    <Navbar title=`${title}` />
-    <main>
-      <slot />
-    </main>
-    <Socials />
+    <div class="layout">
+
+      <main class="main-container">
+        <slot />
+        <footer class="footer">
+            <p>ResetSec &copy; 2026</p>
+        </footer>
+      </main>
+
+
+    </div>
   </body>
 </html>

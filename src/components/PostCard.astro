@@ -5,7 +5,7 @@ const {
   date,
   event,
   category,
-  difficulty,
+  image,
   author = [],
   tags = [],
   description,
@@ -13,63 +13,57 @@ const {
 const { id } = Astro.props;
 ---
 
-<a href=`/posts/${id}`>
-  <div class="post-card">
-    <div class="post-meta">
-      <div class="meta-left">
-        {event && <span class="badge event">{event}</span>}
-        {category && <span class="badge category">{category}</span>}
+<a href={`/posts/${id}`} class="post-link">
+  <div class="post-card horizontal-card">
+    <div class="post-content">
+      <div class="post-meta">
+        <div class="meta-left">
+          {event && <span class="badge event">{event}</span>}
+          {category && <span class="badge category">{category}</span>}
+        </div>
       </div>
 
-      {
-        difficulty && (
-          <span class={`badge difficulty ${difficulty.toLowerCase()}`}>
-            {difficulty}
-          </span>
-        )
-      }
-    </div>
+      <h2 class="post-title">{title}</h2>
+      <p class="post-desc">{description}</p>
 
-    <h2 class="post-title">{title}</h2>
-    <p class="post-desc">{description}</p>
-
-    {
-      tags.length > 0 && (
+      {tags.length > 0 && (
         <div class="tags">
           {tags.map((tag) => (
             <span class="tag">{tag}</span>
           ))}
         </div>
-      )
-    }
+      )}
 
-    <div class="post-footer">
-      <div class="authors">
-        <i class="fa-regular fa-user"></i>
-        <span>
-          {
-            author.map((a, i) => (
+      <div class="post-footer">
+        <div class="authors">
+          <i class="fa-regular fa-user"></i>
+          <span>
+            {author.map((a, i) => (
               <span>
                 {a}
                 {i < author.length - 1 ? ", " : ""}
               </span>
-            ))
-          }
-        </span>
-      </div>
+            ))}
+          </span>
+        </div>
 
-      <div class="date">
-        <i class="fa-regular fa-calendar"></i>
-        <span>
-          {
-            new Date(date).toLocaleDateString(undefined, {
+        <div class="date">
+          <i class="fa-regular fa-calendar"></i>
+          <span>
+            {new Date(date).toLocaleDateString(undefined, {
               year: "numeric",
               month: "short",
               day: "numeric",
-            })
-          }
-        </span>
+            })}
+          </span>
+        </div>
       </div>
     </div>
+
+    {image && (
+      <div class="post-image">
+        <img class="preview-img" src={image} alt={title} />
+      </div>
+    )}
   </div>
 </a>
