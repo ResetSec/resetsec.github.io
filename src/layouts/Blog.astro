@@ -4,7 +4,18 @@ import Navbar from "../components/Navbar.astro";
 import "../styles/blog.css";
 const { title, date, event, category, image, author, tags, description} =
   Astro.props.frontmatter;
+
+const imageUrl = new URL(image, Astro.site).href;
 ---
+<head>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={imageUrl} />
+  <meta property="og:url" content={Astro.url.href} />
+
+  <meta property="og:site_name" content="ResetSec" />
+</head>
 
 <Navbar 
   title="ResetSec" 
