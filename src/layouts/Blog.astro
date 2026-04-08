@@ -7,6 +7,13 @@ const { title, date, event, category, image, author, tags, description} =
 
 const imageUrl = new URL(image, Astro.site).href;
 ---
+
+<Navbar 
+  title="ResetSec" 
+  author={author} 
+/>
+
+<Base title={title} description={description}>
 <head>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={title} />
@@ -16,13 +23,6 @@ const imageUrl = new URL(image, Astro.site).href;
 
   <meta property="og:site_name" content="ResetSec" />
 </head>
-
-<Navbar 
-  title="ResetSec" 
-  author={author} 
-/>
-
-<Base title={title} description={description}>
   
   <slot />
   <div class="side-bar">
