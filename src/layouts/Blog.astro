@@ -4,22 +4,14 @@ import Navbar from "../components/Navbar.astro";
 import "../styles/blog.css";
 const { title, date, event, category, image, author, tags, description} =
   Astro.props.frontmatter;
-
-const imageUrl = image
-  ? new URL(image, Astro.site ?? "https://resetsec.xyz").href
-  : null;
 ---
-
-<Fragment slot="head">
-  {imageUrl && <meta property="og:image" content={imageUrl} />}
-</Fragment>
 
 <Navbar 
   title="ResetSec" 
   author={author} 
 />
 
-<Base title={title} description={description}>
+<Base title={title} description={description}, seoImage={image}>
   
   <slot />
   <div class="side-bar">

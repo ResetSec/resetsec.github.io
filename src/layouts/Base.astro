@@ -6,8 +6,14 @@ const {
   ogDescription = "Cybersec | CTFs • Research • Collab",
   url = "https://resetsec.xyz/",
   image = "/assets/logo-static.webp",
+  seoImage,
   type = "website"
 } = Astro.props;
+
+const finalImage = seoImage ?? image;
+const imageUrl = finalImage.startsWith("http")
+  ? finalImage
+  : new URL(finalImage, Astro.site ?? "https://resetsec.xyz").href;
 ---
 
 <!doctype html>
@@ -155,7 +161,7 @@ body {
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={url} />
     <meta property="og:type" content={type} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={imageUrl} />
 
 
 
