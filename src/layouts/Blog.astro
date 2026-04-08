@@ -5,8 +5,14 @@ import "../styles/blog.css";
 const { title, date, event, category, image, author, tags, description} =
   Astro.props.frontmatter;
 
-const imageUrl = new URL(image, Astro.site).href;
+const imageUrl = image
+  ? new URL(image, Astro.site ?? "https://resetsec.xyz").href
+  : null;
 ---
+
+<Fragment slot="head">
+  {imageUrl && <meta property="og:image" content={imageUrl} />}
+</Fragment>
 
 <Navbar 
   title="ResetSec" 
@@ -14,15 +20,6 @@ const imageUrl = new URL(image, Astro.site).href;
 />
 
 <Base title={title} description={description}>
-<head>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={imageUrl} />
-  <meta property="og:url" content={Astro.url.href} />
-
-  <meta property="og:site_name" content="ResetSec" />
-</head>
   
   <slot />
   <div class="side-bar">
